@@ -5,27 +5,32 @@ import Typewriter from "typewriter-effect";
 
 const achievements = [
   {
-    title: "40th in the Leap Year Programming Contest, 2024",
+    title: "Finalist in WebXtreme Hackathon",
+    type: "image",
+    content: "webXtreme.jpeg",
+  },
+  {
+    title: "Webstack Essentials Course Completion",
+    type: "image",
+    content: "webstack.jpeg",
+  },
+  {
+    title: "Engibiz 2025",
+    type: "pdf",
+    content: "Engibiz 2025.pdf",
+  },
+  {
+    title: "Independence Day Programming Contest 2023",
     type: "image",
     content: "/IDPC2023.jpg",
   },
   {
-    title: "SRBD Code Contest, 2024",
-    type: "image",
-    content: "/IDPC2023.jpg",
-  },
-  {
-    title: "22nd in the Independence Day Programming Contest 2023",
-    type: "image",
-    content: "/IDPC2023.jpg",
-  },
-  {
-    title: "Volunteered at LeetCon 2023 at MIST",
+    title: "Volunteered at LeetCon 2023",
     type: "image",
     content: "/Leetcon.jpg",
   },
   {
-    title: "React Fundamental Course, 2024",
+    title: "React Fundamental Course 2024",
     type: "image",
     content: "/React Fundamentals.jpg",
   },
@@ -110,7 +115,7 @@ const Intro = () => {
                 className="bg-blue-700 mt-4 p-2 px-3 
         transition-all ease-in-out hover:scale-105 text-white rounded-md "
               >
-                Achievements & Certifications
+              Certifications
               </button>
             ) : (
               <button
@@ -118,7 +123,7 @@ const Intro = () => {
                 className="bg-blue-800 mt-4 p-2 px-3 
           transition-all ease-in-out hover:scale-105 text-white rounded-md "
               >
-                Achievements & Certifications
+               Certifications
               </button>
             )}
             {toggle ? (
