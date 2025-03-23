@@ -1,19 +1,19 @@
-import React from 'react'
-import { AppText, socialNetwork } from '../Constants'
+import React from 'react';
+import { AppText, socialNetwork } from '../Constants';
 
 const Footer = () => {
   return (
-    <div className='bg-blue-100 mt-10 p-20 items-center flex flex-col  px-10 md:px-80' id='footer'>
-     <div className='flex gap-4'>
-        {socialNetwork.map((item,index)=>(
-            <div>
-                <img src={item.logo} className="w-[40px]"/>
-            </div>
+    <div className='bg-blue-100 mt-10 p-20 items-center flex flex-col px-10 md:px-80' id='footer'>
+      <div className='flex gap-4'>
+        {socialNetwork.map((item, index) => (
+          <div key={index}>
+            <img src={item.logo} className="w-[40px]" alt={`${item.name} logo`} />
+          </div>
         ))}
-        </div>
-        <h1 className='text-gray-500 text-[15px] mt-4'>{AppText.copywriteText}</h1>
+      </div>
+      <h1 className='text-gray-500 text-[15px] mt-4'>{AppText.copywriteText}</h1>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

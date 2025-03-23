@@ -29,10 +29,10 @@ const ContactUs = () => {
           {AppText.Contact}
           <span className="text-blue-800">{AppText.Us}</span>
         </h1>
-        <img src={phone} className="w-[80px] ml-[20px] " />
+        <img src={phone} className="w-[80px] ml-[20px]" alt="Phone icon" />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 px-10 md:px-44">
-        <img src={contactusbg} className="w-[300px]" />
+        <img src={contactusbg} className="w-[300px]" alt="Contact us background" />
         <div className="w-full">
           <div className="flex flex-col">
             <label>Email</label>
