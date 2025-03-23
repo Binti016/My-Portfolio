@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@500&display=swap');
+
+@layer base {
+  body {
+    @apply font-[Montserrat];
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+  }
+
+  html {
+    scroll-behavior: smooth; /* Optional: Smooth scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit; /* Ensure consistent box-sizing across elements */
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
