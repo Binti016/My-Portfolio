@@ -1,11 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
 import NavBar from "./Components/NavBar";
 import Intro from "./Components/Intro";
 import AboutMe from "./Components/AboutMe";
 import Skills from "./Components/Skills";
 import Portfolio from "./Components/Portfolio";
-import Companies from "./Components/Companies"
+import Companies from "./Components/Companies";
 import ContactUs from "./Components/ContactUs";
 import Footer from "./Components/Footer";
 
@@ -28,7 +27,7 @@ function App() {
       {/* Services */}
 
       {/* Portfolio */}
-      <Portfolio/>
+      <Portfolio />
 
       {/* Companies */}
       <Companies />
