@@ -13,7 +13,7 @@ const NavBar = () => {
             <li className="mr-4 transition-all ease-in-out hover:scale-110 cursor-pointer"><a href="/#skills">Skills</a></li>
             <li className="mr-4 transition-all ease-in-out hover:scale-110 cursor-pointer"><a href="/#portfolio">Websites</a></li>
             <li className="mr-4 transition-all ease-in-out hover:scale-110 cursor-pointer"><a href="/#companies">Companies</a></li>
-            <li className="mr-4 transition-all ease-in-out hover:scale-110 cursor-pointer"><a href="/#contactus">Contact Us</a></li>
+            <li className="mr-4 transition-all ease-in-out hover:scale-110 cursor-pointer"><a href="/#contactus">Contact Me</a></li>
           </ul>
         </div>
 
@@ -38,7 +38,7 @@ const NavBar = () => {
               <li className="p-3 transition-all ease-in-out hover:scale-110 cursor-pointer">Skills</li>
               <li className="p-3 transition-all ease-in-out hover:scale-110 cursor-pointer">Websites</li>
               <li className="p-3 transition-all ease-in-out hover:scale-110 cursor-pointer">Companies</li>
-              <li className="p-3 transition-all ease-in-out hover:scale-110 cursor-pointer">Contact Us</li>
+              <li className="p-3 transition-all ease-in-out hover:scale-110 cursor-pointer">Contact Me</li>
             </ul>
             : null}
         </div>

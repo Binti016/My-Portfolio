@@ -9,7 +9,8 @@ const Portfolio = () => {
   useEffect(() => {
     setPortfolioList(portfolio);
     setPortfolioListOrg(portfolio);
-  },[]);
+  }, []);
+
   const filterPortfolio = (type) => {
     if (type === "All") {
       setPortfolioList(portfolioListOrg);
@@ -27,7 +28,7 @@ const Portfolio = () => {
           {AppText.Creative}&nbsp;
           <span className="text-blue-800">{AppText.Portfolio}</span>
         </h1>
-        <img src={robo} className="w-[70px] ml-5 animate-bounce mt-[-15px]" />
+        <img src={robo} className="w-[70px] ml-5 animate-bounce mt-[-15px]" alt="robot icon" />
       </div>
       <div className="flex flex-row justify-evenly gap-[70px] md:gap-[150px] px-4 md:px-72">
         <button
@@ -47,7 +48,6 @@ const Portfolio = () => {
           UI/UX
         </button>
         <button
-          button
           onClick={() => filterPortfolio("website")}
           className="border-blue-800 border-2 p-1 px-4
         rounded-md text-blue-800 focus:text-white 
@@ -61,10 +61,11 @@ const Portfolio = () => {
       md:px-24 lg:px-48 p-4 gap-3"
       >
         {portfolioList.map((item, index) => (
-          <div className="p-2 flex flex-col transition-all rounded-lg bg-blue-100 ease-in-out group hover:scale-110">
+          <div className="p-2 flex flex-col transition-all rounded-lg bg-blue-100 ease-in-out group hover:scale-110" key={index}>
             <img
               src={item.imageUrl}
               className="h-[180px] rounded-lg object-cover"
+              alt={item.title}  
             />
             <h1 className="text-[14px] group-hover:scale-110 mt-2 text-center font-bold">
               {item.title}
