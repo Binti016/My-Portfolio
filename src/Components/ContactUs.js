@@ -25,14 +25,14 @@ const ContactUs = () => {
   return (
     <div className="flex flex-col justify-center mt-[30px]" id="contactus">
       <div className="flex flex-row justify-center">
-        <h1 className="text-[40px] font-bold">
+        <h1 className="text-[30px] md:text-[40px] font-bold">
           {AppText.Contact}
           <span className="text-blue-800">{AppText.Us}</span>
         </h1>
-        <img src={phone} className="w-[80px] ml-[20px]" alt="Phone icon" />
+        <img src={phone} className="mt-[-20px] w-[80px] ml-[20px]" alt="Phone icon" />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 px-10 md:px-44">
-        <img src={contactusbg} className="w-[300px]" alt="Contact us background" />
+        <img src={contactusbg} className="w-[300px] mx-auto md:mx-0" alt="Contact us background" />
         <div className="w-full">
           <div className="flex flex-col">
             <label>Email</label>
@@ -56,7 +56,7 @@ const ContactUs = () => {
           </div>
           <button
             onClick={handleSubmit}
-            className="transition-all ease-in-out hover:scale-105 bg-blue-600 flex flex-row items-center justify-center text-[14px] py-1 mt-5 text-white rounded-md w-[440px] md:w-[580px]"
+            className="transition-all ease-in-out hover:scale-105 bg-blue-600 flex flex-row items-center justify-center text-[14px] py-1 mt-5 text-white rounded-md w-[410px] md:w-[580px]"
           >
             Submit
             <svg

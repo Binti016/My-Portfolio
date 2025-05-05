@@ -24,7 +24,7 @@ const Portfolio = () => {
   return (
     <div className="flex flex-col items-center justify-center mt-20 mb-10" id="portfolio">
       <div className="flex">
-        <h1 className="text-[40px] font-bold">
+        <h1 className="text-[30px] md:text-[40px] font-bold">
           {AppText.Creative}&nbsp;
           <span className="text-blue-800">{AppText.Portfolio}</span>
         </h1>

@@ -79,10 +79,10 @@ const Intro = () => {
       id="intro"
     >
       <div>
-        <h1 className="text-[40px] font-bold">{AppText.hello}</h1>
+        <h1 className="text-[20px] md:text-[30px] lg:text-[40px] font-bold">{AppText.hello}</h1>
         <div className="flex">
-          <h1 className="text-[40px] font-bold">{AppText.Iam}&nbsp;</h1>
-          <span className="text-[40px] font-bold text-blue-800">
+          <h1 className="text-[20px] md:text-[30px] lg:text-[40px] font-bold">{AppText.Iam}&nbsp;</h1>
+          <span className="text-[20px] md:text-[30px] lg:text-[40px] font-bold text-blue-800">
             <Typewriter
               options={{
                 strings: [
@@ -97,33 +97,33 @@ const Intro = () => {
             />
           </span>
         </div>
-        <h1 className="text-gray-500 mt-4">{AppText.IntroDesc}</h1>
+        <h1 className="text-gray-500 mt-4 text-[15px] md:[20px]">{AppText.IntroDesc}</h1>
         <div className="flex flex-row gap-[10px]">
           <div>
             <button
               onClick={() => openModal(achievements.find((a) => a.title === "Resume"))}
-              className="bg-blue-700 mt-4 p-2 px-3 
+              className="bg-blue-700 mt-4 mb-4 px-3 p-1 lg:pd-2 text-[15px] md:text-[16px] 
         transition-all ease-in-out hover:scale-105 text-white rounded-md "
             >
-              Resume
+              RESUME
             </button>
           </div>
           <div className="achievement">
             {!toggle ? (
               <button
                 onClick={() => setToggle(true)}
-                className="bg-blue-700 mt-4 p-2 px-3 
+                className="bg-blue-700 mt-4 mb-4 px-3 p-1 lg:pd-2 text-[15px] md:text-[16px] 
         transition-all ease-in-out hover:scale-105 text-white rounded-md "
               >
-              Certifications
+              CERTIFICATIONS
               </button>
             ) : (
               <button
                 onClick={() => setToggle(false)}
-                className="bg-blue-800 mt-4 p-2 px-3 
+                className="bg-blue-800 mt-4 mb-4 px-3 p-1 lg:pd-2 text-[15px] md:text-[16px] 
           transition-all ease-in-out hover:scale-105 text-white rounded-md "
               >
-               Certifications
+               CERTIFICATIONS
               </button>
             )}
             {toggle ? (
@@ -145,7 +145,7 @@ const Intro = () => {
       <img
         src={bintiii}
         alt="home"
-        className="w-[250px] h-[250px] md:w-[300px] md:h-[300px] rounded-md"
+        className="w-[230px] h-[230px] md:w-[300px] md:h-[300px] rounded-md"
       />
 
       {/* Modal */}

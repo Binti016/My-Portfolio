@@ -7,7 +7,7 @@ const Skills = () => {
     <div>
       <div className='flex items-center justify-center mt-10 mb-10' id='skills'>
         <img src={skill} className='h-20 animate-bounce' alt="skills icon" />
-        <h2 className='font-bold text-[40px]'>{AppText.Skills}
+        <h2 className='font-bold text-[30px] md:text-[40px]'>{AppText.Skills}
           <span className='text-blue-800'>{AppText.Experties}</span>
         </h2>
       </div>

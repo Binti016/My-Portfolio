@@ -6,7 +6,7 @@ const Companies = () => {
     <div className="bg-blue-100 p-5" id="companies">
       <div className="flex flex-col items-center">
         <div className="mt-[20px]">
-          <h1 className="text-[40px] font-bold">
+          <h1 className="text-[30px] md:text-[40px] font-bold">
             {AppText.CompaniesI}
             <span className="text-blue-800">{AppText.WorkedFor}</span>
           </h1>

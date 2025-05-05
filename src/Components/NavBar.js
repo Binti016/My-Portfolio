@@ -7,6 +7,7 @@ const NavBar = () => {
     <div className="w-screen text-blue-900 h-[60px]">
       <div className='p-5 flex justify-between'>
         <div className='flex ml-auto'>
+        <div className='hidden md:flex'>
           <ul className='flex flex-row'>
             <li className="mr-4 transition-all ease-in-out hover:scale-110 cursor-pointer"><a href="/#intro">Home</a></li>
             <li className="mr-4 transition-all ease-in-out hover:scale-110 cursor-pointer"><a href="/#aboutme">About Me</a></li>
@@ -15,6 +16,7 @@ const NavBar = () => {
             <li className="mr-4 transition-all ease-in-out hover:scale-110 cursor-pointer"><a href="/#companies">Companies</a></li>
             <li className="mr-4 transition-all ease-in-out hover:scale-110 cursor-pointer"><a href="/#contactus">Contact Me</a></li>
           </ul>
+        </div>
         </div>
 
         <div className='md:hidden lg:hidden'>
@@ -32,7 +34,7 @@ const NavBar = () => {
             </svg>
           }
           {toggle ? 
-            <ul className="absolute -translate-x-[110px] flex flex-col mt-8 bg-red-100 p-2">
+            <ul className="absolute -translate-x-[110px] flex flex-col mt-8 bg-blue-100 rounded-md p-2">
               <li className="p-3 transition-all ease-in-out hover:scale-110 cursor-pointer">Home</li>
               <li className="p-3 transition-all ease-in-out hover:scale-110 cursor-pointer">About Me</li>
               <li className="p-3 transition-all ease-in-out hover:scale-110 cursor-pointer">Skills</li>
