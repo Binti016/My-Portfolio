@@ -35,12 +35,12 @@ const NavBar = () => {
           }
           {toggle ? 
             <ul className="absolute -translate-x-[110px] flex flex-col mt-8 bg-blue-100 rounded-md p-2">
-              <li className="p-3 transition-all ease-in-out hover:scale-110 cursor-pointer">Home</li>
-              <li className="p-3 transition-all ease-in-out hover:scale-110 cursor-pointer">About Me</li>
-              <li className="p-3 transition-all ease-in-out hover:scale-110 cursor-pointer">Skills</li>
-              <li className="p-3 transition-all ease-in-out hover:scale-110 cursor-pointer">Websites</li>
-              <li className="p-3 transition-all ease-in-out hover:scale-110 cursor-pointer">Companies</li>
-              <li className="p-3 transition-all ease-in-out hover:scale-110 cursor-pointer">Contact Me</li>
+              <li className="p-3 transition-all ease-in-out hover:scale-110 cursor-pointer"><a href="/#intro">Home</a></li>
+              <li className="p-3 transition-all ease-in-out hover:scale-110 cursor-pointer"><a href="/#aboutme">About Me</a></li>
+              <li className="p-3 transition-all ease-in-out hover:scale-110 cursor-pointer"><a href="/#skills">Skills</a></li>
+              <li className="p-3 transition-all ease-in-out hover:scale-110 cursor-pointer"><a href="/#portfolio">Websites</a></li>
+              <li className="p-3 transition-all ease-in-out hover:scale-110 cursor-pointer"><a href="/#companies">Companies</a></li>
+              <li className="p-3 transition-all ease-in-out hover:scale-110 cursor-pointer"><a href="/#contactus">Contact Me</a></li>
             </ul>
             : null}
         </div>
