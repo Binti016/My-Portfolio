@@ -7,7 +7,9 @@ const Footer = () => {
       <div className='flex gap-4'>
         {socialNetwork.map((item, index) => (
           <div key={index}>
+          <a href={item.url}>
             <img src={item.logo} className="w-[40px]" alt={`${item.name} logo`} />
+            </a>
           </div>
         ))}
       </div>

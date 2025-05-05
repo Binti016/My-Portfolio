@@ -112,7 +112,7 @@ const Intro = () => {
             {!toggle ? (
               <button
                 onClick={() => setToggle(true)}
-                className="bg-blue-700 mt-4 mb-4 px-3 p-1 lg:pd-2 text-[15px] md:text-[16px] 
+                className="bg-blue-700 mt-4 px-3 p-1 lg:pd-2 text-[15px] md:text-[16px] 
         transition-all ease-in-out hover:scale-105 text-white rounded-md "
               >
               CERTIFICATIONS
@@ -120,7 +120,7 @@ const Intro = () => {
             ) : (
               <button
                 onClick={() => setToggle(false)}
-                className="bg-blue-800 mt-4 mb-4 px-3 p-1 lg:pd-2 text-[15px] md:text-[16px] 
+                className="bg-blue-800 mt-4 px-3 p-1 lg:pd-2 text-[15px] md:text-[16px] 
           transition-all ease-in-out hover:scale-105 text-white rounded-md "
               >
                CERTIFICATIONS
@@ -131,7 +131,7 @@ const Intro = () => {
                 {achievements.map((achievement) => (
                   <li
                     key={achievement.title}
-                    className="p-3 mt-2 transition-all ease-in-out hover:scale-105 cursor-pointer bg-blue-300 rounded-lg text-sm text-zinc-800"
+                    className="p-2 mb-1 transition-all ease-in-out hover:scale-105 cursor-pointer bg-blue-300 rounded-lg text-sm text-zinc-800"
                     onClick={() => openModal(achievement)}
                   >
                     {achievement.title}

@@ -60,19 +60,35 @@ const Portfolio = () => {
         className="grid grid-cols-2 items-center content-center md:grid-cols-3 lg:grid-cols-3
       md:px-24 lg:px-48 p-4 gap-3"
       >
-        {portfolioList.map((item, index) => (
-          <div className="p-2 flex flex-col transition-all rounded-lg bg-blue-100 ease-in-out group hover:scale-110" key={index}>
-            <img
-              src={item.imageUrl}
-              className="h-[180px] rounded-lg object-cover"
-              alt={item.title}  
-            />
-            <h1 className="text-[14px] group-hover:scale-110 mt-2 text-center font-bold">
-              {item.title}
-            </h1>
-            <h1 className="text-[12px] text-gray-500 px-6 pb-3">{item.desc}</h1>
-          </div>
-        ))}
+       {portfolioList.map((item, index) => (
+  <div
+    className="p-2 flex flex-col transition-all rounded-lg bg-blue-100 ease-in-out group hover:scale-110"
+    key={index}
+  >
+    <div className="w-full h-[180px] overflow-hidden rounded-lg">
+      <a
+        href={item.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block w-full h-full"
+      >
+        <img
+          src={item.imageUrl}
+          className="w-full h-full object-cover"
+          alt={item.title}
+        />
+      </a>
+    </div>
+
+    <h1 className="text-[14px] group-hover:scale-110 mt-2 text-center font-bold">
+      {item.title}
+    </h1>
+    <h1 className="text-[12px] text-gray-500 px-6 pb-3 text-center">
+      {item.desc}
+    </h1>
+  </div>
+))}
+
       </div>
     </div>
   );

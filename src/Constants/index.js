@@ -104,21 +104,24 @@ import { android, facebook, firebase, instagram, ionic, linkdin, mysql,
       title: 'Train Ticket Management Website',
       type: 'ui/ux',
       desc: "",
-      imageUrl: ticketmaster
+      imageUrl: ticketmaster,
+      link: "https://https://github.com/Binti016?tab=repositories.com"
     },
     {
       id: 2,
       title: 'Ecommerce Website',
       type: 'website',
       desc: "",
-      imageUrl: techstation
+      imageUrl: techstation,
+      link: "https://bs23-ecommerce.netlify.app/"
     },
     {
       id: 3,
       title: 'ToDoList',
       type: 'ui/ux',
       desc: "",
-      imageUrl: todolist
+      imageUrl: todolist,
+      link: "https://https://github.com/Binti016/To-Do-List.com"
     }
   ]
   
@@ -137,22 +140,22 @@ import { android, facebook, firebase, instagram, ionic, linkdin, mysql,
     {
       id: 1,
       logo: instagram,
-      url: 'https://www.instagram.com/tubeguruji/'
+      url: 'https://www.instagram.com/boshita_roy?igsh=MTQyZHUya2p4d3ZvNw=='
     },
     {
       id: 2,
       logo: youtube,
-      url: 'https://www.youtube.com/channel/UC33Tc4FCgd_to314_b2hNTg',
+      url: '',
     },
     {
       id: 3,
       logo: linkdin,
-      url: 'https://www.linkedin.com/in/rahul-sanap-652920108/'
+      url: 'https://www.linkedin.com/in/boshita-roy-binti-890352351/'
     },
     {
       id: 4,
       logo: facebook,
-      url: 'https://www.facebook.com/rahul.sanap1'
+      url: 'https://www.facebook.com/share/16EMm3bwLj/'
     },
   ]
   
